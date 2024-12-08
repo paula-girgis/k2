@@ -11,7 +11,7 @@ export default function Chatbot() {
 
   // استدعاء الـ API
   async function askChatbot(question) {
-    const apiUrl = "http://plantcarehub-001-site1.otempurl.com/Chatbot/chat"; // رابط الخادم الصحيح
+    const apiUrl = "/api/Chatbot/chat"; // رابط الخادم الصحيح
 
     const requestBody = {
       question: question,

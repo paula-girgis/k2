@@ -15,7 +15,7 @@ export default function ForgetPassword() {
     setisLoading(true);
 
     const { data } = await axios
-      .post("http://plantcarehub-001-site1.otempurl.com/User/forget-password", values)
+      .post("/api/User/forget-password", values)
       .catch((err) => {
         setError(err.response.data.message);
         setisLoading(false);

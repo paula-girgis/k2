@@ -6,7 +6,7 @@ async function logout() {
         return;
     }
     try {
-        const response = await fetch("http://plantcarehub-001-site1.otempurl.com/User/logout", {
+        const response = await fetch("/api/User/logout", {
             method: "POST",
             headers: {"Authorization": token,},
         });

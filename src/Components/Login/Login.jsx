@@ -31,7 +31,7 @@ export default function Login() {
   async function handleLogin(vals) {
     setisLoading(true);
     try {
-      const response = await axios.post('http://plantcarehub-001-site1.otempurl.com/User/login', vals);
+      const response = await axios.post('/api/User/login', vals);
       
       if (response?.data?.message === 'Login Successful') {
         localStorage.setItem('userToken', response?.data?.token);

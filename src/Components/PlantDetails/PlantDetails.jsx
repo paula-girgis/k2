@@ -12,7 +12,7 @@ export default function PlantDetails() {
     const [isLoading, setIsLoading] = useState(true);
 
     function getPlantDetails(id) {
-        axios.get(`http://plantcarehub-001-site1.otempurl.com/library/${id}`)
+        axios.get(`/api/library/${id}`)
             .then(({ data }) => {
 
                 console.log(data);

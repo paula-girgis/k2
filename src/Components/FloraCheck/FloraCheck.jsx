@@ -54,7 +54,7 @@ export default function FloaraCheck() {
       formData.append('image', file);
 
       try {
-        const response = await fetch('https://your-api-endpoint.com/upload', {
+        const response = await fetch('/api/FloraCheck/predict', {
           method: 'POST',
           body: formData,
         });

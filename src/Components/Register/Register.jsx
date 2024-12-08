@@ -41,7 +41,7 @@ export default function Register() {
 
 //       setisLoading(true);
 
-//       await axios.post(`http://plantcarehub-001-site1.otempurl.com/User/register`, vals)
+//       await axios.post(`/api/User/register`, vals)
       
 //       .then( (apiResponse) => {
 
@@ -65,7 +65,7 @@ export default function Register() {
 async function handleRegister(vals) {
   setisLoading(true);
 
-  await axios.post("http://plantcarehub-001-site1.otempurl.com/User/register", vals)
+  await axios.post("/api/User/register", vals)
     .then((apiResponse) => {
       // Check if the response is 'Registration successful'
       if (apiResponse?.data === 'Registration successful') {

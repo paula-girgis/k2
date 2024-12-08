@@ -133,7 +133,7 @@ export default function NewPassword() {
     try {
       // Send POST request with the new password and confirm password in the body
       const response = await axios.post(
-        "http://plantcarehub-001-site1.otempurl.com/User/reset-password",
+        "/api/User/reset-password",
         {
           newPassword,  // Include the new password in the request body
           confirmPassword,  // Include the confirm password in the request body
